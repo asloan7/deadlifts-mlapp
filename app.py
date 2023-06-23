@@ -13,25 +13,26 @@ from landmarks import landmarks
 
 window = tk.Tk()
 window.geometry("480x700")
-window.title("Swoleboi") 
+window.title("deadlifts") 
 ck.set_appearance_mode("dark")
 
-classLabel = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="black", padx=10)
+#classLabel = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="black", padx=10)
+classLabel = ck.CTkLabel(window, height=40, width=120, text_color="black", padx=10)
 classLabel.place(x=10, y=1)
 classLabel.configure(text='STAGE') 
-counterLabel = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="black", padx=10)
+counterLabel = ck.CTkLabel(window, height=40, width=120, text_color="black", padx=10)
 counterLabel.place(x=160, y=1)
 counterLabel.configure(text='REPS') 
-probLabel  = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="black", padx=10)
+probLabel  = ck.CTkLabel(window, height=40, width=120, text_color="black", padx=10)
 probLabel.place(x=300, y=1)
 probLabel.configure(text='PROB') 
-classBox = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="white", fg_color="blue")
+classBox = ck.CTkLabel(window, height=40, width=120, text_color="white", fg_color="blue")
 classBox.place(x=10, y=41)
 classBox.configure(text='0') 
-counterBox = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="white", fg_color="blue")
+counterBox = ck.CTkLabel(window, height=40, width=120, text_color="white", fg_color="blue")
 counterBox.place(x=160, y=41)
 counterBox.configure(text='0') 
-probBox = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="white", fg_color="blue")
+probBox = ck.CTkLabel(window, height=40, width=120, text_color="white", fg_color="blue")
 probBox.place(x=300, y=41)
 probBox.configure(text='0') 
 
@@ -40,7 +41,8 @@ def reset_counter():
     global counter
     counter = 0 
 
-button = ck.CTkButton(window, text='RESET', command=reset_counter, height=40, width=120, text_font=("Arial", 20), text_color="white", fg_color="blue")
+#button = ck.CTkButton(window, text='RESET', command=reset_counter, height=40, width=120, text_font=("Arial", 20), text_color="white", fg_color="blue")
+button = ck.CTkButton(window, text='RESET', command=reset_counter, height=40, width=120, text_color="white", fg_color="blue")
 button.place(x=10, y=600)
 
 frame = tk.Frame(height=480, width=480)
